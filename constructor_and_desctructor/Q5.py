@@ -2,6 +2,8 @@
 Create 2 objects and show their details using a method."""
 
 
+
+
 class Product:
     def __init__(self, name, category, price):
         self.name = name
