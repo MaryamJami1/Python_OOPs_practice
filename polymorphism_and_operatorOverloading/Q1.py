@@ -3,11 +3,12 @@ Show polymorphism using a parent reference."""
 
 class Shape:
     def area(self):
-        return "area from shape"
+       print ("area from shape")
 
 
 class Circle(Shape):
     def area(self):
+        # super().area()
         return "area from circle"
     
 
