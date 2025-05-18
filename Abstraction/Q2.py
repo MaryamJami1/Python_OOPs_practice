@@ -35,6 +35,8 @@ class PartTimeEmployee(Employee):
         
 
 
+
+
 full_time_employee = FullTimeEmployee()
 Part_time_employee = PartTimeEmployee(500, 5)
 
