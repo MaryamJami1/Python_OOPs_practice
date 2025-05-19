@@ -1,5 +1,7 @@
-"""Create an abstract class Notification with an abstract method send(message).
-Create classes: EmailNotification, SMSNotification, and 
-PushNotification that override the send() method and print the respective message."""
+"""Create an abstract class PaymentMethod with abstract methods:
+authenticate_user() make_payment(amount)
+Then create two concrete classes:CreditCard PayPal
+Each class should:Implement both abstract methods
+Simulate the payment flow with custom print statements"""
 
 
