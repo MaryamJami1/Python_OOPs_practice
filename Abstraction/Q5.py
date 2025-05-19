@@ -43,3 +43,10 @@ class Paypal(PaymentMethod):
         
 
 
+credit =  Credit()
+credit.authenticate_user("maryam", 98784)
+credit.make_payment("60,000")
+
+paypal = Paypal()
+paypal.authenticate_user("maryamjamil@gmail.com")
+paypal.make_payment("20,000")
