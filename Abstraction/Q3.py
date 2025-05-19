@@ -32,4 +32,24 @@ class SavingAccount(BankAccount):
         
 
 class CurrentAccount(BankAccount):
-    pass
+
+    def __init__(self, balance, amount, overdraft_limit):
+     self.balance = balance
+     self.amount = amount
+     self.overdraft_limit = overdraft_limit
+
+    def withdraw_amount(self):
+     if self.balance - self.amount >= -self.overdraft_limit:
+        self.balance -= self.amount
+        print(f"Withdraw successful. New balance: {self.balance}")
+     else:
+        print("Withdraw failed. Overdraft limit exceeded")
+
+
+
+saving = SavingAccount(5000, 4000)
+saving.withdraw_amount()
+
+
+current = CurrentAccount(5000, 6000, 2000)
+current.withdraw_amount()
